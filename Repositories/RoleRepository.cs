@@ -1,8 +1,6 @@
 ﻿using adoblog.Models;
 using Dapper.Contrib.Extensions;
 using Microsoft.Data.SqlClient;
-using System.Data;
-using System.Data.Common;
 
 namespace adoblog.Repositories;
 

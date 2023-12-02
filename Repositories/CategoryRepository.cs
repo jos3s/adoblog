@@ -1,12 +1,11 @@
 ﻿using adoblog.Models;
 using Dapper;
-using Microsoft.Data.SqlClient;
 
 namespace adoblog.Repositories;
 
 public class CategoryRepository : Repository<Category>
 {
-    public CategoryRepository(SqlConnection connection) : base(connection)
+    public CategoryRepository() : base()
     {
     }
 

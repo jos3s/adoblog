@@ -1,7 +1,5 @@
-﻿using adoblog.Models;
-using Dapper.Contrib.Extensions;
+﻿using Dapper.Contrib.Extensions;
 using Microsoft.Data.SqlClient;
-using static Dapper.SqlMapper;
 
 namespace adoblog.Repositories;
 
@@ -9,7 +7,7 @@ public class Repository<TModel> where TModel : class
 {
     protected readonly SqlConnection _connection;
 
-    public Repository(SqlConnection connection) => _connection = connection;
+    public Repository() => _connection = Database.Connection;
 
     public List<TModel> Get() => (List<TModel>)_connection.GetAll<TModel>();
 

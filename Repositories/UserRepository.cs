@@ -1,13 +1,11 @@
 ﻿using adoblog.Models;
 using Dapper;
-using Dapper.Contrib.Extensions;
-using Microsoft.Data.SqlClient;
 
 namespace adoblog.Repositories;
 
 public class UserRepository : Repository<User>
 {
-    public UserRepository(SqlConnection connection) : base(connection)
+    public UserRepository() : base()
     {
     }
 

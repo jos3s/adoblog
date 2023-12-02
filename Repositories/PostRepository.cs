@@ -1,12 +1,11 @@
 ﻿using adoblog.Models;
 using Dapper;
-using Microsoft.Data.SqlClient;
 
 namespace adoblog.Repositories
 {
     internal class PostRepository : Repository<Post>
     {
-        public PostRepository(SqlConnection connection) : base(connection)
+        public PostRepository() : base()
         {
         }
 
