@@ -11,6 +11,6 @@ public class Role
 
     public override string ToString()
     {
-        return Name;
+        return $"{Id} - {Name}";
     }
 }

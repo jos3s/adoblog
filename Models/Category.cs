@@ -22,7 +22,8 @@ public class Category
     public override string ToString()
     {
         StringBuilder sb = new StringBuilder();
-        sb.AppendLine($"{Name}");
+        sb.Append($"{Name}");
+        if (Posts.Count > 0) sb.Append("\n");
         foreach (var post in Posts)
         {
             sb.AppendLine($"- {post.ToString()}");

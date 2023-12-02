@@ -26,7 +26,7 @@ public class User
         sb.Append($"{Name}, {Email}");
         foreach (Role role in Roles)
         {
-            sb.Append($", {role.ToString()}");
+            sb.Append($", {role.Name}");
         }
         return sb.ToString();
     }

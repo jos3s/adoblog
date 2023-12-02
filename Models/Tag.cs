@@ -19,6 +19,6 @@ public class Tag
 
     public override string ToString()
     {
-        return Name;
+        return $"{Id} - {Name} - {Slug}";
     }
 }
